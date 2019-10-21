@@ -35,6 +35,7 @@
         android:hint="@string/hint_project_title"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:contentDescription="@string/fab_save_project"
         android:id="@+id/fab_save_project"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

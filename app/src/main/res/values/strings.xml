@@ -76,5 +76,12 @@
     <string name="project_edit_confirmation">Project changed</string>
     <string name="task_edit_confirmation">Task changed</string>
     <string name="note_edit_confirmation">Note changed</string>
+    <string name="main_fab_content_description">Main Add button</string>
+    <string name="fab_add_project_content_description">Add New Project</string>
+    <string name="fab_add_note_content_description">Add New Note</string>
+    <string name="fab_add_task_content_description">Add New Task</string>
+    <string name="fab_save_note">Save Note</string>
+    <string name="fab_save_project">Save Project</string>
+    <string name="fab_save_task">Save Task</string>
 
 </resources>

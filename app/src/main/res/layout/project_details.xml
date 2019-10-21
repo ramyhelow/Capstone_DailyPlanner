@@ -66,6 +66,7 @@
         </androidx.core.widget.NestedScrollView>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:contentDescription="@string/main_fab_content_description"
             android:id="@+id/fab_main"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -92,6 +93,7 @@
                 android:text="@string/new_project"/>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:contentDescription="@string/fab_add_project_content_description"
                 android:id="@+id/fab_project"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -118,6 +120,7 @@
                 android:text="@string/new_note"/>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:contentDescription="@string/fab_add_note_content_description"
                 android:id="@+id/fab_note"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -144,6 +147,7 @@
                 android:text="@string/new_task"/>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:contentDescription="@string/fab_add_task_content_description"
                 android:id="@+id/fab_task"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
