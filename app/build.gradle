@@ -1,9 +1,19 @@
 apply plugin: 'com.android.application'
-def keystorePropertiesFile = rootProject.file("local.properties")
-def keystoreProperties = new Properties()
-keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+//def keystorePropertiesFile = rootProject.file("local.properties")
+//def keystoreProperties = new Properties()
+//keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
+    signingConfigs {
+        //run ./gradlew assembleRelease to get release apk
+        release {
+            keyAlias 'key0'
+            storeFile file('../Capstone.jks')
+            keyPassword 'Capstone'
+            storePassword 'Capstone'
+        }
+    }
     compileSdkVersion 29
     defaultConfig {
         applicationId "com.ramyhelow.dailyplanner"
@@ -17,7 +27,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.release
         }
     }
     compileOptions {
