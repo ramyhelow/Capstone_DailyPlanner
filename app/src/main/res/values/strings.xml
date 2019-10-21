@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Daily Planner</string>
+    <string name="tasks">Tasks</string>
+    <string name="notes">Notes</string>
+    <string name="projects_title">Projects</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="other_time">Other Time</string>
+    <string name="completed_tasks">Completed Tasks</string>
+
+    <string name="new_task">New Task</string>
+    <string name="new_note">New Note</string>
+    <string name="new_project">New Project</string>
+
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+    <string name="today_icon_description">Icon for Today</string>
+    <string name="tomorrow_icon_description">Icon for Tomorrow</string>
+    <string name="other_time_icon_description">Icon for Other Time</string>
+    <string name="completed_tasks_icon_description">Icon for Completed Tasks</string>
+
+    <string name="login">Login</string>
+    <string name="anon_login">Anon Login</string>
+    <string name="log_out">Log out</string>
+    <string name="delete">Delete</string>
+
+    <string name="edit_option">Edit</string>
+    <string name="edit_project">Edit Project</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="edit_task">Edit Task</string>
+
+    <string name="deadline">Deadline:  </string>
+    <string name="no_deadline">No deadline</string>
+    <string name="title">Title</string>
+    <string name="hint_details">Details</string>
+    <string name="details">Details:</string>
+    <string name="note_details">Note Details</string>
+    <string name="task_details">Task Details</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="pick_project">Pick Project</string>
+    <string name="hint_write">Write Something</string>
+    <string name="hint_project_title">Project Title</string>
+    <string name="assigned_to_project">Assigned to project:</string>
+    <string name="no_project">No project</string>
+    <string name="no_tasks">No tasks to display</string>
+    <string name="select_project">Choose Project</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="project">Project: </string>
+    <string name="no_info">No additional information</string>
+    <string name="hint_no_project">Task is not part of any project</string>
+    <string name="project_tasks">Tasks for this project:</string>
+
+    <string name="create_new_project">Create New Project</string>
+    <string name="create_new_note">Create New Note</string>
+    <string name="create_new_task">Create New Task</string>
+
+    <string name="no_project_title">Please enter project title</string>
+    <string name="project_list_empty">You don\'t have any projects</string>
+    <string name="no_note_data">Please make sure that all fields are filled</string>
+    <string name="no_task_title">Please enter task title</string>
+
+    <string name="task_created">Task created</string>
+    <string name="note_created">Note created</string>
+    <string name="project_created">Project created</string>
+
+    <string name="delete_project_confirmation">Do you really want to delete this project?</string>
+    <string name="delete_note_confirmation">Do you really want to delete this note?</string>
+    <string name="delete_task_confirmation">Do you really want to delete this task?</string>
+
+    <string name="project_edit_confirmation">Project changed</string>
+    <string name="task_edit_confirmation">Task changed</string>
+    <string name="note_edit_confirmation">Note changed</string>
+
+</resources>

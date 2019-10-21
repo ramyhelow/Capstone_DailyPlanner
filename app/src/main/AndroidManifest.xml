@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ramyhelow.dailyplanner">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.ramyhelow.dailyplanner.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.ramyhelow.dailyplanner.MainActivity" />
+        <activity android:name="com.ramyhelow.dailyplanner.createActivities.CreateTaskActivity"
+            android:parentActivityName="com.ramyhelow.dailyplanner.MainActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ramyhelow.dailyplanner.createActivities.CreateNoteActivity"
+            android:parentActivityName="com.ramyhelow.dailyplanner.MainActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ramyhelow.dailyplanner.createActivities.CreateProjectActivity"
+            android:parentActivityName="com.ramyhelow.dailyplanner.MainActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ramyhelow.dailyplanner.detailActivities.NoteDetails"
+            android:parentActivityName="com.ramyhelow.dailyplanner.MainActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.ramyhelow.dailyplanner.detailActivities.NormalCategory"
+            android:parentActivityName="com.ramyhelow.dailyplanner.MainActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.ramyhelow.dailyplanner.detailActivities.CompletedTasksCategory"
+            android:parentActivityName="com.ramyhelow.dailyplanner.MainActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ramyhelow.dailyplanner.detailActivities.ProjectDetails"
+            android:parentActivityName="com.ramyhelow.dailyplanner.MainActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.ramyhelow.dailyplanner.detailActivities.TaskDetails"
+            android:parentActivityName="com.ramyhelow.dailyplanner.MainActivity"
+            android:launchMode="singleTask"/>
+
+        <service android:name="com.ramyhelow.dailyplanner.widget.WidgetService" android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver android:name="com.ramyhelow.dailyplanner.widget.WidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/test_widget_info" />
+        </receiver>
+    </application>
+
+</manifest>

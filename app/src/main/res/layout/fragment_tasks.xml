@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="312dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_today"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_height"
+                android:layout_marginEnd="@dimen/card_margin_end"
+                android:layout_marginStart="@dimen/card_margin_start"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/today_icon"
+                    android:contentDescription="@string/today_icon_description"
+                    android:layout_width="@dimen/card_icon_width"
+                    android:layout_height="@dimen/card_icon_height"
+                    android:layout_marginBottom="@dimen/card_icon_margin_bottom"
+                    android:layout_marginEnd="@dimen/card_icon_margin_end"
+                    android:layout_marginTop="@dimen/card_icon_margin_top"
+                    android:layout_marginStart="@dimen/card_icon_margin_start"
+                    android:src="@mipmap/baseline_today_black_48dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/card_text_size"
+                    android:text="@string/today" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_tomorrow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_height"
+                android:layout_marginEnd="@dimen/card_margin_end"
+                android:layout_marginStart="@dimen/card_margin_start"
+                android:layout_marginTop="@dimen/card_margin_top"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_today">
+
+                <ImageView
+                    android:id="@+id/tomorrow_icon"
+                    android:contentDescription="@string/tomorrow_icon_description"
+                    android:layout_width="@dimen/card_icon_width"
+                    android:layout_height="@dimen/card_icon_height"
+                    android:layout_marginBottom="@dimen/card_icon_margin_bottom"
+                    android:layout_marginEnd="@dimen/card_icon_margin_end"
+                    android:layout_marginTop="@dimen/card_icon_margin_top"
+                    android:layout_marginStart="@dimen/card_icon_margin_start"
+                    android:src="@mipmap/baseline_next_week_black_48dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/card_text_size"
+                    android:text="@string/tomorrow" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_other_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_height"
+                android:layout_marginEnd="@dimen/card_margin_end"
+                android:layout_marginStart="@dimen/card_margin_start"
+                android:layout_marginTop="@dimen/card_margin_top"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_tomorrow">
+
+                <ImageView
+                    android:id="@+id/other_time_icon"
+                    android:contentDescription="@string/other_time_icon_description"
+                    android:layout_width="@dimen/card_icon_width"
+                    android:layout_height="@dimen/card_icon_height"
+                    android:layout_marginBottom="@dimen/card_icon_margin_bottom"
+                    android:layout_marginEnd="@dimen/card_icon_margin_end"
+                    android:layout_marginTop="@dimen/card_icon_margin_top"
+                    android:layout_marginStart="@dimen/card_icon_margin_start"
+                    android:src="@mipmap/baseline_watch_later_black_48dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/card_text_size"
+                    android:text="@string/other_time" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_completed_tasks"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/card_height"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="@dimen/card_margin_end"
+                android:layout_marginStart="@dimen/card_margin_start"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_other_time"
+                app:layout_constraintVertical_bias="0.517">
+
+                <ImageView
+                    android:id="@+id/finished_tasks_icon"
+                    android:contentDescription="@string/completed_tasks_icon_description"
+                    android:layout_width="@dimen/card_icon_width"
+                    android:layout_height="@dimen/card_icon_height"
+                    android:layout_marginBottom="@dimen/card_icon_margin_bottom"
+                    android:layout_marginEnd="@dimen/card_icon_margin_end"
+                    android:layout_marginTop="@dimen/card_icon_margin_top"
+                    android:layout_marginStart="@dimen/card_icon_margin_start"
+                    android:src="@mipmap/baseline_done_black_48dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/card_text_size"
+                    android:text="@string/completed_tasks" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/projects_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            android:text="@string/projects_title"
+            android:textSize="24sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="#000000" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_projects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:focusable="false"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginBottom="40dp"/>
+
+        <ProgressBar
+            android:id="@+id/loading_indicator"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
